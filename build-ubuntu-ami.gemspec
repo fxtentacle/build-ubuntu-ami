@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name = 'build-ubuntu-ami'
-  s.version = '3.0.0'
+  s.version = '3.0.1'
 
   s.authors = ["Aaron Suggs"]
   s.description = "Create customized ubuntu AMIs the hard (secure) way."

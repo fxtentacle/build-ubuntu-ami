@@ -59,6 +59,10 @@ if [ -L $imagedir/etc/resolv.conf.bak ]; then mv $imagedir/etc/resolv.conf.bak $
 
 # Clean up chroot environment
 chroot $imagedir umount /proc
+umount $imagedir/proc/
+umount $imagedir/sys/
+umount $imagedir/dev/
+rm -rf $imagedir/tmp/*
 
 # Clean up policy-rc.d
 rm -f $imagedir/usr/sbin/policy-rc.d
